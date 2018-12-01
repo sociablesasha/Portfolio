@@ -1,0 +1,231 @@
+@import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    min-width: 50rem;
+
+    margin: 0;
+}
+
+.resume-header-wrapper {
+    position: fixed;
+
+    width: 100%;
+    height: 20rem;
+
+    padding: 5rem 0rem 5rem 0rem;
+
+    background-color: lightsteelblue;
+
+    color: white;
+
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.resume-header-wrapper::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.resume-header {
+    width: 45rem;
+    padding: 0 2.5rem 0 2.5rem;
+    
+    margin: 0 auto;
+}
+
+.resume-header .resume-photo-wrapper {
+    float: left;
+
+    width: 20rem;
+    height: 20rem;
+}
+
+.resume-header .resume-photo {
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+
+    border: 1rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+}
+
+.resume-header .resume-summary {
+    float: right;
+
+    width: 20rem;
+    height: calc(20rem - 1.25rem);
+
+    padding: 1.25rem 0 0 0;
+
+    font-size: 1.2rem;
+}
+
+.resume-header .resume-summary i {
+    margin-right: 0.8rem;
+    
+    cursor: pointer;
+}
+
+.resume-body-wrapper {
+    position: relative;
+    top: 30rem;
+
+    width: 100%;
+    height: auto;
+
+    padding: 5rem 0px 5rem 0px;
+
+    background-color: white;
+
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+
+    box-shadow: 3rem 3rem 3rem 3rem lightslategrey;
+}
+
+.resume-body {
+    width: 45rem;
+    padding: 0 2.5rem 0 2.5rem;
+    
+    margin: 0 auto;
+}
+
+.resume-section {
+    padding: 2.5rem;
+
+    margin-bottom: 5rem;
+
+    border-top: 1px solid #959595;
+    border-bottom: 1px solid #959595;
+}
+
+.resume-section:last-child {
+    margin-bottom: 0rem;
+}
+
+.resume-section .resume-section-header::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.resume-section .resume-title {
+    display: inline;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.resume-section .resume-star {
+    color: lightsteelblue;
+    text-align: right;
+}
+
+.resume-section .resume-date {
+    text-align: right;
+}
+
+.resume-section .resume-section-body {
+    display: none;
+
+    margin: 2rem 1rem 0rem 1rem;    
+}
+
+.resume-section .resume-section-wrapper {
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.resume-section .resume-section-wrapper div {
+    display: inline-block;
+
+    padding: 0.15rem;
+}
+
+.resume-section .resume-name {
+    font-weight: 700;
+}
+
+.resume-section .resume-arrow {
+    color: lightsteelblue;
+
+    cursor: pointer;
+}
+
+.resume-section .resume-content-block {
+    display: block !important;
+}
+
+.resume-section .resume-images-wrapper {
+    padding:  0 !important;
+
+    text-align: center;
+}
+
+.resume-section .resume-images-wrapper-mobile {
+    display: flex !important;
+
+    padding:  0 !important;
+}
+
+.resume-section .resume-image-wrapper {
+    transition: 0.5s;
+}
+
+.resume-section .resume-image-wrapper-left {
+    width: 22.5%;
+}
+
+.resume-section .resume-image-wrapper-middle {
+    width: 50%;
+}
+
+.resume-section .resume-image-wrapper-right {
+    width: 22.5%;
+}
+
+.resume-section .resume-image {
+    width: 100%;
+    height: 100%;
+
+    cursor: pointer;
+}
+
+.resume-content-block p {
+    margin: 2px 0px 2px 0px;
+    padding-left: 20px;
+}
+
+.resume-content-block ul, .resume-content-block ol {
+    margin: 0;
+    padding: 0 40px 0 40px;
+}
+
+.resume-content-block .resume-inner-list {
+    padding-left: 60px;
+}
+
+.resume-content-block li {
+    margin: 2px 0px 2px 0px;
+}
+
+.resume-content-blockquote {
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 0.5rem;
+
+    border-radius: 10px;
+
+    background: lightgray;
+}
+
+.resume-content-blockquote div {
+    width: 100%;
+}
+
+.resume-content-blockquote p {
+    padding-left: 20px;
+    font-size: 15px;
+}

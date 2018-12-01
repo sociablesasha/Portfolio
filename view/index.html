@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../image/icon/profile.jpg">
+
+    <!-- Title -->
+    <title>Yonghyun Kim's</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../style/index.css">
+
+
+    <!-- PickMe (2018.07.01. ~ 진행중.) -->
+    <link rel="import" href="../project/PickMe/content.html">
+
+    <!-- PickUp (2018.09.01. ~ 2018.11.03.) -->
+    <link rel="import" href="../project/PickUp/content.html">
+
+    <!-- FreeBoard (2018.09.12. ~ 2018.09.17.) -->
+    <link rel="import" href="../project/FreeBoard/content.html">
+
+    <!-- Portfolio (2018.09.08. ~ 2018.09.10.) -->
+    <link rel="import" href="../project/Portfolio/content.html">
+
+    <!-- Shop (2018.09.05. ~ 2018.09.08.) -->
+    <link rel="import" href="../project/Shop/content.html">
+
+    <!-- Systube (2018.08.15. ~ 2018.08.21.) -->
+    <link rel="import" href="../project/Systube/content.html">
+
+
+    <!-- Dictionary (2018.08.13. ~ 2018.08.14.) -->
+    <link rel="import" href="../project/Dictionary/content.html">
+
+
+    <!-- PaaS-Ta EDM (2018.08.01. ~ 2018.08.03.) -->
+    <link rel="import" href="../project/PaaS-Ta/content.html">
+
+
+    <!-- PocketKBO (2018.07.13. ~ 2018.07.14.) -->
+    <link rel="import" href="../project/PocketKBO/content.html">
+
+
+    <!-- ERROR -->
+    <!-- DSM Vote (2018.04.09. ~ 2018.04.15.) -->
+    <link rel="import" href="../project/DSM Vote/content.html">
+
+
+
+</head>
+
+<body>
+    <div class="resume-header-wrapper">
+        <div class="resume-header">
+            <div class="resume-photo-wrapper">
+                <img class="resume-photo" src="../image/icon/profile.jpg">
+            </div>
+            <diV class="resume-summary">
+                <p><i class="fas fa-user"></i><i class="far fa-copy" style="display: none"></i>Yonghyun Kim</p>
+                <p><i class="fas fa-birthday-cake"></i><i class="far fa-copy" style="display: none;"></i>2000.04.01</p>
+                <p><i class="fas fa-phone" style="transform: scaleX(-1);"></i><i class="far fa-copy" style="display: none;"></i>010-5914-0768</p>
+                <p><i class="fas fa-envelope"></i><i class="far fa-copy" style="display: none;"></i>sociablesasha@gmail.com</p>
+                <p><i class="fab fa-github"></i><i class="far fa-copy" style="display: none;"></i>sociablesasha</p>
+                <p>
+                    <i class="fas fa-file-download" data-file="Portfolio.pdf"></i>Portfolio
+            </diV>
+        </div>
+    </div>
+
+    <div class="resume-body-wrapper">
+        <div class="resume-body"></div>
+    </div>
+
+    <script>
+        var projects = document.querySelectorAll('link[rel="import"]');
+
+        projects.forEach(function (project) {
+            content = project.import;
+            document.querySelector(".resume-body").appendChild(content.querySelector(".resume-section"));
+        });
+    </script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!-- File Download -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.fileDownload/1.4.2/jquery.fileDownload.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../javascript/index.js"></script>
+</body>
+
+</html>
