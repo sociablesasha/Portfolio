@@ -11,45 +11,45 @@
     <link rel="shortcut icon" href="../image/profile.jpg">
 
     <!-- Title -->
-    <title>Yonghyun Kim's</title>
+    <title>Yonghyun Kim's (1.0)</title>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../style/index.css">
 
-
-    <!-- PickMe (2018.07.01. ~ 진행중.) -->
-    <link rel="import" href="../project/PickMe/content.html">
-
-    <!-- PickUp (2018.09.01. ~ 2018.11.03.) -->
-    <link rel="import" href="../project/PickUp/content.html">
-
+    <!-- HomesStudio (2019.05.14. ~ 2019.08.30.) -->
+    <link rel="import" href="../project/HomesStudio/content.html">
+    <!-- EVERIP (2019.02.03. ~ 2019.03.09.) -->
+    <link rel="import" href="../project/EVERIP/content.html">
+    <!-- BUJA 2.0 (2019.01.14. ~ 2019.05.27.) -->
+    <link rel="import" href="../project/BUJA 2.0/content.html">
     <!-- FreeBoard (2018.09.12. ~ 2018.09.17.) -->
     <link rel="import" href="../project/FreeBoard/content.html">
-
     <!-- Portfolio (2018.09.08. ~ 2018.09.10.) -->
     <link rel="import" href="../project/Portfolio/content.html">
-
     <!-- Shop (2018.09.05. ~ 2018.09.08.) -->
     <link rel="import" href="../project/Shop/content.html">
-
+    <!-- PickUp (2018.09.02. ~ 2018.11.03.) -->
+    <link rel="import" href="../project/PickUp/content.html">
+    <!-- 문화재안전지킴이 (2018.08.29. ~ 2018.12.28.) -->
+    <link rel="import" href="../project/문화재안전지킴이/content.html">
     <!-- Systube (2018.08.15. ~ 2018.08.21.) -->
     <link rel="import" href="../project/Systube/content.html">
-
     <!-- Dictionary (2018.08.13. ~ 2018.08.14.) -->
     <link rel="import" href="../project/Dictionary/content.html">
-
     <!-- PaaS-Ta EDM (2018.08.01. ~ 2018.08.03.) -->
     <link rel="import" href="../project/PaaS-Ta/content.html">
-
     <!-- PocketKBO (2018.07.13. ~ 2018.07.14.) -->
     <link rel="import" href="../project/PocketKBO/content.html">
-
-    <!-- ERROR -->
-    <!-- DSM Vote (2018.04.09. ~ 2018.04.15.) -->
+    <!-- 3D Printer (2018.07.02. ~ 2018.08.24.) -->
+    <link rel="import" href="../project/3D Printer/content.html">
+    <!-- PickMe (2018.04.30. ~ 2018.12.19.) -->
+    <link rel="import" href="../project/PickMe/content.html">
+    <!-- DSM Vote (2018.04.02. ~ 2018.04.20.) -->
     <link rel="import" href="../project/DSM Vote/content.html">
-
-
-
+    <!-- SysMasterSuite (2018.02.05. ~ 2018.02.28.) -->
+    <link rel="import" href="../project/SysMasterSuite/content.html">    
+    <!-- DSM SHOP (2017.10.02. ~ 2017.12.27.) -->
+    <link rel="import" href="../project/DSM Shop/content.html">    
 </head>
 
 <body>
@@ -69,14 +69,13 @@
             </diV>
         </div>
     </div>
-
+    
     <div class="resume-body-wrapper">
         <div class="resume-body"></div>
     </div>
 
     <script>
-        var projects = document.querySelectorAll('link[rel="import"]');
-
+        const projects = document.querySelectorAll('link[rel="import"]');
         projects.forEach(function (project) {
             content = project.import;
             document.querySelector(".resume-body").appendChild(content.querySelector(".resume-section"));

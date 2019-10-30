@@ -32,7 +32,7 @@ body {
 .resume-header {
     width: 45rem;
     padding: 0 2.5rem 0 2.5rem;
-    
+
     margin: 0 auto;
 }
 
@@ -64,7 +64,7 @@ body {
 
 .resume-header .resume-summary i {
     margin-right: 0.8rem;
-    
+
     cursor: pointer;
 }
 
@@ -75,20 +75,20 @@ body {
     width: 100%;
     height: auto;
 
-    padding: 5rem 0px 5rem 0px;
+    padding: 1.5rem 0px;
 
     background-color: white;
 
     color: black;
     font-family: 'Montserrat', sans-serif;
 
-    box-shadow: 3rem 3rem 3rem 3rem lightslategrey;
+    box-shadow: 0rem -2rem 2rem 0rem lightslategrey;
 }
 
 .resume-body {
     width: 45rem;
-    padding: 0 2.5rem 0 2.5rem;
-    
+    padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+
     margin: 0 auto;
 }
 
@@ -115,9 +115,16 @@ body {
     display: inline;
 
     font-size: 1.5rem;
-    font-weight: bold;
 
     cursor: pointer;
+}
+
+.resume-section .resume-belong {
+    font-size: 0.85rem;
+}
+
+.resume-section .resume-belong span {
+    margin-left: 0.25rem;
 }
 
 .resume-section .resume-star {
@@ -132,7 +139,7 @@ body {
 .resume-section .resume-section-body {
     display: none;
 
-    margin: 2rem 1rem 0rem 1rem;    
+    margin: 2rem 1rem 0rem 1rem;
 }
 
 .resume-section .resume-section-wrapper {
@@ -160,7 +167,7 @@ body {
 }
 
 .resume-section .resume-images-wrapper {
-    padding:  0 !important;
+    padding: 0 !important;
 
     text-align: center;
 }
@@ -168,7 +175,7 @@ body {
 .resume-section .resume-images-wrapper-mobile {
     display: flex !important;
 
-    padding:  0 !important;
+    padding: 0 !important;
 }
 
 .resume-section .resume-image-wrapper {
@@ -199,7 +206,8 @@ body {
     padding-left: 20px;
 }
 
-.resume-content-block ul, .resume-content-block ol {
+.resume-content-block ul,
+.resume-content-block ol {
     margin: 0;
     padding: 0 40px 0 40px;
 }
